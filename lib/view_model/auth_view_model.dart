@@ -3,37 +3,47 @@ import 'package:flutter/material.dart';
 
 class AuthViewModel with ChangeNotifier {
   final _myRepository = AuthRepository();
-  bool _loading = false;
 
-  get loading => _loading;
+  bool _loginLoading = false;
 
-  setLoading(bool val) {
-    _loading = val;
+  get loginLoading => _loginLoading;
+
+  bool _signupLoading = false;
+
+  get signupLoading => _signupLoading;
+
+  setLoginLoading(bool val) {
+    _loginLoading = val;
+    notifyListeners();
+  }
+
+  setSignupLoading(bool val) {
+    _signupLoading = val;
     notifyListeners();
   }
 
   Future<void> loginApi(dynamic data) async {
-    setLoading(true);
+    setLoginLoading(true);
     _myRepository.loginApi(data).then(
       (value) {
-        setLoading(false);
+        setLoginLoading(false);
       },
     ).onError(
       (error, stackTrace) {
-        setLoading(false);
+        setLoginLoading(false);
       },
     );
   }
 
   Future<void> signupApi(dynamic data) async {
-    setLoading(true);
+    setSignupLoading(true);
     _myRepository.signupApi(data).then(
-          (value) {
-        setLoading(false);
+      (value) {
+        setSignupLoading(false);
       },
     ).onError(
-          (error, stackTrace) {
-        setLoading(false);
+      (error, stackTrace) {
+        setSignupLoading(false);
       },
     );
   }
