@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 class AppException implements Exception {
  final String? _message, _prefix;

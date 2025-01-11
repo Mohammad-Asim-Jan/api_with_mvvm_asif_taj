@@ -1,7 +1,8 @@
 
-import 'package:api_with_mvvm_asif_taj/model/user_model.dart';
-import 'package:api_with_mvvm_asif_taj/view_model/user_view_model.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+import '../../model/user_model.dart';
+import '../user_view_model.dart';
 
 class SplashServices {
 

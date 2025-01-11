@@ -1,9 +1,11 @@
-import 'package:api_with_mvvm_asif_taj/app_providers.dart';
-import 'package:api_with_mvvm_asif_taj/utility/routes/app_routes_names.dart';
-import 'package:api_with_mvvm_asif_taj/utility/routes/routes.dart';
-import 'package:api_with_mvvm_asif_taj/view/login_view.dart';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import 'app_providers.dart';
+import 'utility/routes/app_routes_names.dart';
+import 'utility/routes/routes.dart';
+import 'view/login_view.dart';
 
 void main() {
   runApp(const MyApp());

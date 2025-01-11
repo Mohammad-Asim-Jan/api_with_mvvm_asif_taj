@@ -1,6 +1,7 @@
-import 'package:api_with_mvvm_asif_taj/view_model/auth_view_model.dart';
-import 'package:api_with_mvvm_asif_taj/view_model/user_view_model.dart';
 import 'package:provider/provider.dart';
+
+import 'view_model/auth_view_model.dart';
+import 'view_model/user_view_model.dart';
 
 class AppProviders {
   static List<ChangeNotifierProvider> providersList = [

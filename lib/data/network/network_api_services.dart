@@ -1,8 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-import 'package:api_with_mvvm_asif_taj/data/app_exceptions.dart';
-import 'package:api_with_mvvm_asif_taj/data/network/base_api_services.dart';
+
+import '../app_exceptions.dart';
+import 'base_api_services.dart';
 
 class NetworkApiServices extends BaseApiServices {
   @override

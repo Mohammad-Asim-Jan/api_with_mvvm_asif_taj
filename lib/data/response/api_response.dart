@@ -1,4 +1,5 @@
-import 'package:api_with_mvvm_asif_taj/data/response/status.dart';
+
+import 'status.dart';
 
 class ApiResponse<T> {
   Status? status;
